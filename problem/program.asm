@@ -10,14 +10,14 @@
 // if key = f --> draw else if key = c --> clear
 	@j
 	M = D // save key
-	@70  // press f
-	D = D-A
+	@0  // press f
+	D = D-M
 	@FILL
 	D;JEQ
 	@j
 	D = M
-	@67
-	D = D - A
+	@1
+	D = D - M
 	@CLEAR
 	D;JEQ
 	@START
