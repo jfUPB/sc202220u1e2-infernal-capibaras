@@ -21,19 +21,12 @@
               }
               else
               {
-                    continue;
+                   continue;
               }
               
-              For(MEMORY[18] = 16384; MEMORY[18] <=24576; MEMORY[18]++)
+              For(MEMORY[18] = 16384; MEMORY[18] < 24576; MEMORY[18]++)
               {
-                    if(MEMORY[17] == -1)
-                    {
-                         MEMORY[MEMORY[18]] = 0xffff;
-                    }
-                    else if (MEMORY[17] == 0)
-                    {
-                         MEMORY[MEMORY[18]] = 0x0000;
-                    }
+                   MEMORY[MEMORY[18]] = MEMORY[17];
               }
          }
     }
