@@ -4,7 +4,7 @@
 	@FILLORCLEAR // if (kbd != 0) -> si se está presionando una tecla
 	D;JNE // si sí se presiona, se va a FILLORCLEAR
 	@START
-	0;JMP
+	0;JMP //si no se presiona, vuelve al start (ciclo que está esperando que se presione algo)
 
 (FILLORCLEAR)
 // if kbd = lo que está en la posición 0
